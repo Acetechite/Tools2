@@ -1,1 +1,2 @@
-Hello:Bonjour,Hola,Hallo
+:Hello,Bonjour,Hola,Hallo:
+:Thank you,Merci,Gracias,Danke:

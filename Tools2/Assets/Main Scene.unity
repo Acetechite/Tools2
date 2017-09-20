@@ -200,11 +200,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbff4b7950873a949bce3ca7bef034fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuItem: {fileID: 1091448543}
-  textHolder: {fileID: 1091448545}
   library: {fileID: 4900000, guid: d0e0e1c489001d049aabb51e120db25d, type: 3}
-  fileText: Hello:Bonjour,Hola,Hallo
+  fileText: ":Hello,Bonjour,Hola,Hallo:\r\n:Thank you,Merci,Gracias,Danke:"
   menuText: Yeah
+  textToUse: Thank you
+  textTranslated: Gracias
+  selectedLang: Spanish
+  langIndex: 2
+  languages:
+  - English
+  - French
+  - Spanish
+  - German
+  contents:
+  - 
+  - Hello
+  - Bonjour
+  - Hola
+  - Hallo
+  - "\r\n"
+  - Thank you
+  - Merci
+  - Gracias
+  - Danke
+  - 
 --- !u!4 &261242066
 Transform:
   m_ObjectHideFlags: 0
@@ -228,6 +247,7 @@ GameObject:
   - component: {fileID: 1091448544}
   - component: {fileID: 1091448546}
   - component: {fileID: 1091448545}
+  - component: {fileID: 1091448547}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -285,13 +305,29 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Hello:Bonjour,Hola,Hallo
+  m_Text: 
 --- !u!222 &1091448546
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1091448543}
+--- !u!114 &1091448547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091448543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f8075f5bdb94bb44b4ea36abd813332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  libraryTester: {fileID: 261242064}
+  library: {fileID: 0}
+  englishText: Hello
+  translatedText: 
+  textUsed: {fileID: 0}
 --- !u!1 &1271841188
 GameObject:
   m_ObjectHideFlags: 0
