@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 261242066}
   - component: {fileID: 261242065}
   m_Layer: 0
-  m_Name: LibraryTester
+  m_Name: LibrarySetting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,9 +204,9 @@ MonoBehaviour:
   fileText: ":Hello,Bonjour,Hola,Hallo:\r\n:Thank you,Merci,Gracias,Danke:"
   menuText: Yeah
   textToUse: Thank you
-  textTranslated: Gracias
-  selectedLang: Spanish
-  langIndex: 2
+  textTranslated: Danke
+  selectedLang: German
+  langIndex: 3
   languages:
   - English
   - French
@@ -305,7 +305,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Hallo
 --- !u!222 &1091448546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -324,10 +324,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   libraryTester: {fileID: 261242064}
-  library: {fileID: 0}
+  library: {fileID: 261242065}
   englishText: Hello
-  translatedText: 
-  textUsed: {fileID: 0}
+  translatedText: Hallo
+  textUsed: {fileID: 1091448545}
 --- !u!1 &1271841188
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,17 +20,16 @@ public class LibraryController : MonoBehaviour {
 
 	// Use this for initialization
 	void OnEnable () {
+        char[] separators = { ':', ',' };
+        fileText = library.text;
 
-	}
+        contents = fileText.Split(separators);
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-        char[] separators = { ':', ',' };
-        fileText = library.text;
-        Debug.Log(fileText);
-
-        contents = fileText.Split(separators);
+        
 
         //check for issues
 
