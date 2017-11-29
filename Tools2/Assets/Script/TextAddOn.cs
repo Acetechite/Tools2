@@ -1,26 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEditor.Experimental.AssetImporters;
 using UnityEngine;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
 public class TextAddOn : MonoBehaviour {
 
-    public GameObject libraryTester;
-    public LibraryController library;
-    public string englishText;
-    public string translatedText;
+    public LibraryData libraryData;
     public Text textUsed;
 
 	// Use this for initialization
 	void Start () {
-        library = libraryTester.GetComponent<LibraryController>();
+        GameObject libraryTemp = GameObject.FindGameObjectWithTag("Library");
+        libraryData = libraryTemp.GetComponent(typeof(LibraryData)) as LibraryData;
         textUsed = gameObject.GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        translatedText = library.GetTranslation(englishText);
-        textUsed.text = translatedText;
+        textUsed.text = libraryData.words[0];
+        
 	}
 }

@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: fbacf9a2698bb5049be1817b45b1ec8b
+timeCreated: 1511992285
+licenseType: Free
+ScriptedImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 6a68555f1ad734b418cd1b626387071f, type: 3}
+  text: ":English,French,Spanish,German:\r\n:Hello,Bonjour,Hola,Hallo:\r\n:Thank you,Merci,Gracias,Danke:\r\n:Play,Jouer,Jugar,Abspielen:"
+  menuText: 
+  textToUse: 
+  textTranslated: 
+  langIndex: 0
+  languages:
+  - English
+  - French
+  - Spanish
+  - German
+  contents:
+  - 
+  - English,French,Spanish,German
+  - "\r\n"
+  - Hello,Bonjour,Hola,Hallo
+  - "\r\n"
+  - Thank you,Merci,Gracias,Danke
+  - "\r\n"
+  - Play,Jouer,Jugar,Abspielen
+  - 
+  selectedLang: 
+  textToUse: 
+  textTranslated: 
+  words:
+  - Hello,Bonjour,Hola,Hallo
+  - Thank you,Merci,Gracias,Danke
+  - Play,Jouer,Jugar,Abspielen
+  test: hello
