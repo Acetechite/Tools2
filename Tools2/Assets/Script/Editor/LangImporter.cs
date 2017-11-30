@@ -17,7 +17,6 @@ public class LangImporter : ScriptedImporter {
 
 
     public GameObject library;
-    public LibraryData libraryData;
     public string text;
     public string menuText;
 
@@ -50,8 +49,8 @@ public class LangImporter : ScriptedImporter {
     public override void OnImportAsset(AssetImportContext ctx)
     {
         //Main asset
-        var lang = new ScriptableObject();
-        ctx.SetMainAsset("MainAsset", lang);
+        var lang = ScriptableObject.CreateInstance<ScriptableTest>();
+        ctx.SetMainAsset("MainAsset",lang);
 
         //Material as sub-asset
         text = File.ReadAllText(ctx.assetPath, Encoding.UTF8);
@@ -81,10 +80,9 @@ public class LangImporter : ScriptedImporter {
             }
         }
 
-        library = GameObject.FindGameObjectWithTag("Library");
-        libraryData = library.GetComponent(typeof(LibraryData)) as LibraryData;
-        libraryData.setWords(m_words);
-        libraryData.setLanguages(m_languages);
+        lang.words = m_words;
+        lang.languages = m_languages;
+        lang.selectedLanguage = m_selectedLang;
 
     }
     void OnEnable() {

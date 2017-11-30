@@ -1,5 +1,21 @@
 Tools 2 Localization
 
+========Revision=========
+I have finally understood Scriptable Objects and using them with a large text asset.
+
+Now my text file gets imported to an asset file that is mapped to a data class I've created 
+thats a kind of scriptable object. The user puts in that language library file, and the editor 
+parses it for the content you want to see. Now you can put a UseScriptableTest script onto a text 
+object and it will look for the default language library, or throw an error if its missing. 
+Whether you want to change the library or add the default one, you can atach the asset to this 
+script and then that component will allow you to include "Text". Whatever you include in the 
+text here will scan the library asset, and return the translation based on the library 
+specific selected language.
+
+I believe that should cover:
+	- Library is imported as a Unity Asset
+	- New text objects can have the library translations applied to them (tested)
+
 This project i focused on localization for buttons and interface elements.
 
 Essentially there is a plain-text lexicon that the language person updates 

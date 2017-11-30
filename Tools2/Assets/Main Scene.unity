@@ -245,7 +245,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 448146030}
-  - component: {fileID: 448146029}
   m_Layer: 0
   m_Name: Library
   m_TagString: Library
@@ -253,27 +252,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &448146029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 448146028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7db6b9f34886e045958971f50c4d0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedLanguage: 
-  languages:
-  - English
-  - French
-  - Spanish
-  - German
-  words:
-  - Hello,Bonjour,Hola,Hallo
-  - Thank you,Merci,Gracias,Danke
-  - Play,Jouer,Jugar,Abspielen
 --- !u!4 &448146030
 Transform:
   m_ObjectHideFlags: 0
@@ -355,7 +333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Hello,Bonjour,Hola,Hallo
+  m_Text: Hallo
 --- !u!222 &1091448546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -370,11 +348,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091448543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f8075f5bdb94bb44b4ea36abd813332, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a17e6fea6c60484a9893e992e6bea7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  libraryData: {fileID: 448146029}
-  textUsed: {fileID: 1091448545}
+  myScriptableObj: {fileID: 11400000, guid: fbacf9a2698bb5049be1817b45b1ec8b, type: 3}
+  Text: Hello
+  textObj: {fileID: 1091448545}
+  englishW: []
+  translated: []
 --- !u!1 &1271841188
 GameObject:
   m_ObjectHideFlags: 0

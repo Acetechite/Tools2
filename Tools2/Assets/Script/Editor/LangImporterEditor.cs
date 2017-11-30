@@ -5,6 +5,7 @@ using UnityEditor.Experimental.AssetImporters;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
+
 [CustomEditor(typeof(LangImporter))]
 public class LangImporterEditor : ScriptedImporterEditor {
 
